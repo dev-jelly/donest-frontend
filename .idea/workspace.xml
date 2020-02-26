@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57d7cd2e-a44a-4586-9a9e-b1c8d39ecac7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/common/Responsive.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/item/ItemDetail.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/item/ItemWrite.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/items/ItemList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ItemDetailPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ItemListPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ItemWritePage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Responsive.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Responsive.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,10 +32,17 @@
   </component>
   <component name="ProjectId" id="1YKRnJBBoWKStPvR8dxIW5r66QZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="10.15.1" />
+    <property name="full.screen.before.presentation.mode" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="8.15.1" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -36,18 +50,6 @@
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v10.15.1/lib/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -76,6 +78,7 @@
       <updated>1582689464081</updated>
       <workItem from="1582689465475" duration="171000" />
       <workItem from="1582689649741" duration="948000" />
+      <workItem from="1582727173616" duration="1911000" />
     </task>
     <task id="LOCAL-00001" summary="Add gitignore">
       <created>1582689943800</created>
@@ -95,7 +98,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -104,5 +109,27 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add gitignore" />
     <option name="LAST_COMMIT_MESSAGE" value="Add gitignore" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1840" y="291" key="#com.intellij.fileTypes.FileTypeChooser.inPresentationMode" timestamp="1582728657720">
+      <screen x="-2560" y="-163" width="2560" height="1440" />
+    </state>
+    <state x="-1840" y="291" key="#com.intellij.fileTypes.FileTypeChooser.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582728657720" />
+    <state width="2558" height="411" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1582728452111">
+      <screen x="-2560" y="-163" width="2560" height="1440" />
+    </state>
+    <state width="2558" height="411" key="GridCell.Tab.0.bottom.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582728452111" />
+    <state width="2558" height="411" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1582728452107">
+      <screen x="-2560" y="-163" width="2560" height="1440" />
+    </state>
+    <state width="2558" height="411" key="GridCell.Tab.0.center.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582728452107" />
+    <state width="2558" height="411" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1582728452106">
+      <screen x="-2560" y="-163" width="2560" height="1440" />
+    </state>
+    <state width="2558" height="411" key="GridCell.Tab.0.left.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582728452106" />
+    <state width="2558" height="411" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1582728452110">
+      <screen x="-2560" y="-163" width="2560" height="1440" />
+    </state>
+    <state width="2558" height="411" key="GridCell.Tab.0.right.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582728452110" />
   </component>
 </project>

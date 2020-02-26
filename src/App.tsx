@@ -1,25 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route } from 'react-router-dom';
+import Responsive from "./components/common/Responsive";
+import ItemListPage from "./pages/ItemListPage";
+import ItemDetailPage from "./pages/ItemDetailPage";
+import ItemWritePage from "./pages/ItemWritePage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Responsive>
+      <Route component={ItemListPage} path={['/', '/items']} exact/>
+      <Route component={ItemDetailPage} path={'/items/:id'} exact/>
+      <Route component={ItemWritePage} path={'/items/new'} exact/>
+    </Responsive>
   );
 }
 
