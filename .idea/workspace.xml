@@ -2,24 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57d7cd2e-a44a-4586-9a9e-b1c8d39ecac7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/item/ItemDetail.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/item/ItemWrite.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/items/ItemList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ItemDetailPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ItemListPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ItemWritePage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Responsive.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Responsive.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/items/ItemList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/items/ItemList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,8 +44,9 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v10.15.1/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v12.14.1/bin/node" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.config/yarn/global/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -78,7 +76,10 @@
       <updated>1582689464081</updated>
       <workItem from="1582689465475" duration="171000" />
       <workItem from="1582689649741" duration="948000" />
-      <workItem from="1582727173616" duration="1911000" />
+      <workItem from="1582727173616" duration="2398000" />
+      <workItem from="1582809944400" duration="3878000" />
+      <workItem from="1582887004215" duration="2078000" />
+      <workItem from="1582979200206" duration="2970000" />
     </task>
     <task id="LOCAL-00001" summary="Add gitignore">
       <created>1582689943800</created>
@@ -87,7 +88,49 @@
       <option name="project" value="LOCAL" />
       <updated>1582689943800</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Set structure">
+      <created>1582729233740</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582729233740</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add .prettierrc">
+      <created>1582812184890</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582812184890</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add open-color dependency">
+      <created>1582812200680</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582812200680</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add tab width option">
+      <created>1582813155581</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582813155581</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add dependencies">
+      <created>1582887359121</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582887359121</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add item type">
+      <created>1582887371657</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1582887371657</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,28 +151,86 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add gitignore" />
+    <MESSAGE value="Set structure" />
+    <MESSAGE value="Add .prettierrc" />
+    <MESSAGE value="Add open-color dependency" />
+    <MESSAGE value="Add tab width option" />
+    <MESSAGE value="Add dependencies" />
+    <MESSAGE value="Add item type" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add item type" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1840" y="291" key="#com.intellij.fileTypes.FileTypeChooser.inPresentationMode" timestamp="1582728657720">
       <screen x="-2560" y="-163" width="2560" height="1440" />
     </state>
     <state x="-1840" y="291" key="#com.intellij.fileTypes.FileTypeChooser.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582728657720" />
-    <state width="2558" height="411" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1582728452111">
+    <state x="-1687" y="170" width="814" height="1107" key="CommitChangelistDialog2" timestamp="1582887371573">
+      <screen x="-2560" y="-140" width="2560" height="1417" />
+    </state>
+    <state x="-2109" y="-126" key="CommitChangelistDialog2.inPresentationMode" timestamp="1582813155479">
       <screen x="-2560" y="-163" width="2560" height="1440" />
     </state>
-    <state width="2558" height="411" key="GridCell.Tab.0.bottom.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582728452111" />
-    <state width="2558" height="411" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1582728452107">
+    <state x="-2109" y="-126" key="CommitChangelistDialog2.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582813155479" />
+    <state x="-1687" y="170" width="814" height="1107" key="CommitChangelistDialog2/-2560.-140.2560.1417/0.23.1920.1121@-2560.-140.2560.1417" timestamp="1582887371573" />
+    <state width="2516" height="407" key="GridCell.Tab.0.bottom" timestamp="1582892862694">
       <screen x="-2560" y="-163" width="2560" height="1440" />
     </state>
-    <state width="2558" height="411" key="GridCell.Tab.0.center.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582728452107" />
-    <state width="2558" height="411" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1582728452106">
+    <state width="2558" height="411" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1582814978911">
       <screen x="-2560" y="-163" width="2560" height="1440" />
     </state>
-    <state width="2558" height="411" key="GridCell.Tab.0.left.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582728452106" />
-    <state width="2558" height="411" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1582728452110">
+    <state width="2558" height="411" key="GridCell.Tab.0.bottom.inPresentationMode/-2560.-140.2560.1417/0.23.1920.1121@-2560.-140.2560.1417" timestamp="1582745026182" />
+    <state width="2558" height="411" key="GridCell.Tab.0.bottom.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582814978911" />
+    <state width="2516" height="407" key="GridCell.Tab.0.bottom/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582892862694" />
+    <state width="2516" height="407" key="GridCell.Tab.0.center" timestamp="1582892862693">
       <screen x="-2560" y="-163" width="2560" height="1440" />
     </state>
-    <state width="2558" height="411" key="GridCell.Tab.0.right.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582728452110" />
+    <state width="2558" height="411" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1582814978910">
+      <screen x="-2560" y="-163" width="2560" height="1440" />
+    </state>
+    <state width="2558" height="411" key="GridCell.Tab.0.center.inPresentationMode/-2560.-140.2560.1417/0.23.1920.1121@-2560.-140.2560.1417" timestamp="1582745026181" />
+    <state width="2558" height="411" key="GridCell.Tab.0.center.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582814978910" />
+    <state width="2516" height="407" key="GridCell.Tab.0.center/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582892862693" />
+    <state width="2516" height="407" key="GridCell.Tab.0.left" timestamp="1582892862693">
+      <screen x="-2560" y="-163" width="2560" height="1440" />
+    </state>
+    <state width="2558" height="411" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1582814978910">
+      <screen x="-2560" y="-163" width="2560" height="1440" />
+    </state>
+    <state width="2558" height="411" key="GridCell.Tab.0.left.inPresentationMode/-2560.-140.2560.1417/0.23.1920.1121@-2560.-140.2560.1417" timestamp="1582745026180" />
+    <state width="2558" height="411" key="GridCell.Tab.0.left.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582814978910" />
+    <state width="2516" height="407" key="GridCell.Tab.0.left/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582892862693" />
+    <state width="2516" height="407" key="GridCell.Tab.0.right" timestamp="1582892862694">
+      <screen x="-2560" y="-163" width="2560" height="1440" />
+    </state>
+    <state width="2558" height="411" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1582814978911">
+      <screen x="-2560" y="-163" width="2560" height="1440" />
+    </state>
+    <state width="2558" height="411" key="GridCell.Tab.0.right.inPresentationMode/-2560.-140.2560.1417/0.23.1920.1121@-2560.-140.2560.1417" timestamp="1582745026181" />
+    <state width="2558" height="411" key="GridCell.Tab.0.right.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582814978911" />
+    <state width="2516" height="407" key="GridCell.Tab.0.right/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582892862694" />
+    <state x="-2366" y="-163" key="SettingsEditor.inPresentationMode" timestamp="1582813143457">
+      <screen x="-2560" y="-163" width="2560" height="1440" />
+    </state>
+    <state x="-2366" y="-163" key="SettingsEditor.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582813143457" />
+    <state x="-1614" y="314" width="667" height="486" key="find.popup" timestamp="1582982073058">
+      <screen x="-2560" y="-163" width="2560" height="1440" />
+    </state>
+    <state x="-1991" y="14" width="1421" height="1086" key="find.popup.inPresentationMode" timestamp="1582812373934">
+      <screen x="-2560" y="-163" width="2560" height="1440" />
+    </state>
+    <state x="-1991" y="14" width="1421" height="1086" key="find.popup.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582812373934" />
+    <state x="-1614" y="314" width="667" height="486" key="find.popup/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582982073058" />
+    <state x="-1616" y="263" key="run.anything.popup" timestamp="1582980981249">
+      <screen x="-2560" y="-163" width="2560" height="1440" />
+    </state>
+    <state x="-1616" y="263" key="run.anything.popup/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582980981249" />
+    <state x="-1617" y="166" width="672" height="678" key="search.everywhere.popup" timestamp="1582982502409">
+      <screen x="-2560" y="-163" width="2560" height="1440" />
+    </state>
+    <state x="-2065" y="-165" width="1565" height="3212" key="search.everywhere.popup.inPresentationMode" timestamp="1582813539604">
+      <screen x="-2560" y="-163" width="2560" height="1440" />
+    </state>
+    <state x="-2065" y="-165" width="1565" height="3212" key="search.everywhere.popup.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582813539604" />
+    <state x="-1617" y="166" width="672" height="678" key="search.everywhere.popup/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582982502409" />
   </component>
 </project>
