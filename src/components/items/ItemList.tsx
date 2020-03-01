@@ -3,6 +3,8 @@ import { Item } from '../../types/Item';
 import styled from 'styled-components';
 import oc from 'open-color';
 import moment from 'moment';
+import { LinkButton } from '../common/Button';
+import {newItemPath} from "../../lib/paths";
 
 const itemListDummy: Item[] = [
   {
@@ -35,12 +37,10 @@ const TimeBlock = styled.div`
   padding: 5px;
   text-align: center;
   border-right: 1px ${oc.gray[4]} solid;
-  
+
   span {
     font-weight: bold;
-  }  
-
-  
+  }
 `;
 
 const DescriptionBlock = styled.div`
@@ -70,7 +70,7 @@ const ItemWrapper = styled.div`
   justify-content: center;
   &:last-child {
     border: none;
-  } 
+  }
 `;
 
 const ItemListWrapper = styled.div`
@@ -78,7 +78,6 @@ const ItemListWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  
 `;
 
 const ItemBlock = ({ item }: any) => {
@@ -102,6 +101,11 @@ const ItemList = () => {
       {itemListDummy.map(item => (
         <ItemBlock item={item} key={item.id} />
       ))}
+      <LinkButton
+        to={newItemPath}
+        background={oc.cyan[4]} color={'black'}>
+        Add Item
+      </LinkButton>
     </ItemListWrapper>
   );
 };

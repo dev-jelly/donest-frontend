@@ -4,13 +4,14 @@ import Responsive from "./components/common/Responsive";
 import ItemListPage from "./pages/ItemListPage";
 import ItemDetailPage from "./pages/ItemDetailPage";
 import ItemWritePage from "./pages/ItemWritePage";
+import {indexPath, itemDetailPath, itemListPath, newItemPath} from "./lib/paths";
 
 function App() {
   return (
     <Responsive>
-      <Route component={ItemListPage} path={['/', '/items']} exact/>
-      <Route component={ItemDetailPage} path={'/items/:id'} exact/>
-      <Route component={ItemWritePage} path={'/items/new'} exact/>
+      <Route component={ItemListPage} path={[indexPath, itemListPath]} exact/>
+      <Route component={ItemDetailPage} path={itemDetailPath} exact/>
+      <Route component={ItemWritePage} path={newItemPath} exact/>
     </Responsive>
   );
 }
