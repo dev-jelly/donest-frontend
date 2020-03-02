@@ -8,10 +8,11 @@ interface ButtonStyleProps {
 }
 
 const ButtonStyle = css<ButtonStyleProps>`
-  width: 100%;
+  width: calc(100% - 4rem);
   height: 2rem;
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight: bold;  
+  margin: 0 2rem;
   background: ${props => props.background || 'none'};
   color: ${props => props.color || 'black'};
   opacity: 0.8;
