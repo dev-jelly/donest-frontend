@@ -19,6 +19,7 @@ const ButtonStyle = css<ButtonStyleProps>`
   text-align: center;
   text-decoration: none;
   line-height: 2rem;
+  border-radius: 4px;
   &:hover {
     opacity: 1;
   }
