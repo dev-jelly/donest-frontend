@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import oc from 'open-color';
 import moment from 'moment';
 import { LinkButton } from '../common/Button';
-import {newItemPath} from "../../lib/paths";
+import { newItemPath } from '../../lib/paths';
 
 const itemListDummy: Item[] = [
   {
@@ -31,7 +31,7 @@ const itemListDummy: Item[] = [
 ];
 
 const TimeBlock = styled.div`
-  width: 8rem;
+  width: 3rem;
   font-size: 1rem;
   color: ${oc.gray[8]};
   padding: 5px;
@@ -43,31 +43,56 @@ const TimeBlock = styled.div`
   }
 `;
 
-const DescriptionBlock = styled.div`
-  width: calc(100% - 12rem);
-  padding: 5px 5px 5px 10px;
-  p.item-title {
+interface ItemWrapperType {
+  timeDiff: number;
+}
+
+const DescriptionBlock = styled.div<ItemWrapperType>`
+  height: ${props => 2 + props.timeDiff * 0.5}rem;
+  width: calc(100% - 8rem);  
+  justify-content: center;
+  border-radius: 4px;
+  border: 6px rgba(0, 0, 0, 0.21);
+  margin: 4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2px 0 6px;
+  color: ${oc.gray[9]};
+  
+  p {
     margin: 0;
+  }
+  
+  p.item-title {
+    text-overflow: ellipsis;
     font-size: 1.2rem;
     font-weight: bold;
   }
-
+  
   p.item-description {
-    margin: auto;
     font-size: 0.8rem;
-    color: ${oc.gray[8]};
+    color: ${oc.gray[7]};
   }
 `;
 
-const ItemWrapper = styled.div`
+const ItemWrapper = styled.div<ItemWrapperType>`
   width: 100%;
-  height: 4.5rem;
+  height: ${props => 3 + props.timeDiff * 0.5}rem;
   border-bottom: 1px ${oc.gray[3]} dashed;
-
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  
+  &:nth-child(even) > div:nth-child(even) {
+    background: ${oc.blue[2]};
+  }
+  &:nth-child(odd) > div:nth-child(even) {
+    background: ${oc.blue[3]};
+  }
+  
   &:last-child {
     border: none;
   }
@@ -81,13 +106,14 @@ const ItemListWrapper = styled.div`
 `;
 
 const ItemBlock = ({ item }: any) => {
+  const timeDiff = (item.endDateTime - item.startDateTime) / 600 / 1000;
+  console.log(timeDiff);
   return (
-    <ItemWrapper>
+    <ItemWrapper timeDiff={timeDiff}>
       <TimeBlock>
-        <span>{moment(item.startDateTime).format('hh:mm')}</span>~
-        <span>{moment(item.endDateTime).format('hh:mm')}</span>
+        <span>{moment(item.startDateTime).format('hh:mm')}</span>
       </TimeBlock>
-      <DescriptionBlock>
+      <DescriptionBlock timeDiff={timeDiff}>
         <p className={'item-title'}>{item.title}</p>
         <p className={'item-description'}>{item.description}</p>
       </DescriptionBlock>
@@ -101,9 +127,8 @@ const ItemList = () => {
       {itemListDummy.map(item => (
         <ItemBlock item={item} key={item.id} />
       ))}
-      <LinkButton
-        to={newItemPath}
-        background={oc.cyan[4]} color={'black'}>
+      <hr/>
+      <LinkButton to={newItemPath} background={oc.blue[4]} color={'black'}>
         Add Item
       </LinkButton>
     </ItemListWrapper>
