@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57d7cd2e-a44a-4586-9a9e-b1c8d39ecac7" name="Default Changelist" comment="Apply normalize">
+    <list default="true" id="57d7cd2e-a44a-4586-9a9e-b1c8d39ecac7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/item/ItemWrite.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item/ItemWrite.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/Item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Item.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +85,7 @@
       <workItem from="1582979200206" duration="3579000" />
       <workItem from="1583071304605" duration="6522000" />
       <workItem from="1583154865399" duration="3472000" />
-      <workItem from="1583239735536" duration="4231000" />
+      <workItem from="1583239735536" duration="6413000" />
     </task>
     <task id="LOCAL-00001" summary="Add gitignore">
       <created>1582689943800</created>
@@ -177,7 +178,21 @@
       <option name="project" value="LOCAL" />
       <updated>1583243951518</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add border radius on button">
+      <created>1583244879911</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1583244879911</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Styling job button">
+      <created>1583244892337</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1583244892337</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +226,9 @@
     <MESSAGE value="Keep Styling ItemWrite" />
     <MESSAGE value="Apply normalize" />
     <MESSAGE value="Update styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update styling" />
+    <MESSAGE value="Add border radius on button" />
+    <MESSAGE value="Styling job button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Styling job button" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1840" y="291" key="#com.intellij.fileTypes.FileTypeChooser.inPresentationMode" timestamp="1582728657720">
@@ -221,10 +238,10 @@
     <state x="-1687" y="152" width="814" height="1107" key="CommitChangelistDialog2" timestamp="1582986652814">
       <screen x="-2560" y="-163" width="2560" height="1440" />
     </state>
-    <state x="-2109" y="-126" key="CommitChangelistDialog2.inPresentationMode" timestamp="1583244879803">
+    <state x="-2109" y="-126" key="CommitChangelistDialog2.inPresentationMode" timestamp="1583244892247">
       <screen x="-2560" y="-163" width="2560" height="1440" />
     </state>
-    <state x="-2109" y="-126" key="CommitChangelistDialog2.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1583244879803" />
+    <state x="-2109" y="-126" key="CommitChangelistDialog2.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1583244892247" />
     <state x="-1687" y="170" width="814" height="1107" key="CommitChangelistDialog2/-2560.-140.2560.1417/0.23.1920.1121@-2560.-140.2560.1417" timestamp="1582887371573" />
     <state x="-1687" y="152" key="CommitChangelistDialog2/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582986652814" />
     <state width="2516" height="407" key="GridCell.Tab.0.bottom" timestamp="1582996434340">
@@ -286,10 +303,10 @@
     <state x="-1614" y="314" width="667" height="486" key="find.popup" timestamp="1582982073058">
       <screen x="-2560" y="-163" width="2560" height="1440" />
     </state>
-    <state x="-1991" y="14" width="1421" height="1086" key="find.popup.inPresentationMode" timestamp="1583240999966">
+    <state x="-1991" y="14" width="1421" height="1086" key="find.popup.inPresentationMode" timestamp="1583245171975">
       <screen x="-2560" y="-163" width="2560" height="1440" />
     </state>
-    <state x="-1991" y="14" width="1421" height="1086" key="find.popup.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1583240999966" />
+    <state x="-1991" y="14" width="1421" height="1086" key="find.popup.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1583245171975" />
     <state x="-1614" y="314" width="667" height="486" key="find.popup/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582982073058" />
     <state x="-1616" y="263" key="run.anything.popup" timestamp="1582980981249">
       <screen x="-2560" y="-163" width="2560" height="1440" />
@@ -303,10 +320,10 @@
     <state x="-1617" y="166" width="672" height="678" key="search.everywhere.popup" timestamp="1582982502409">
       <screen x="-2560" y="-163" width="2560" height="1440" />
     </state>
-    <state x="-2065" y="-165" width="1565" height="3212" key="search.everywhere.popup.inPresentationMode" timestamp="1583243971302">
+    <state x="-2065" y="-163" width="1565" height="1436" key="search.everywhere.popup.inPresentationMode" timestamp="1583247141964">
       <screen x="-2560" y="-163" width="2560" height="1440" />
     </state>
-    <state x="-2065" y="-165" width="1565" height="3212" key="search.everywhere.popup.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1583243971302" />
+    <state x="-2065" y="-163" width="1565" height="1436" key="search.everywhere.popup.inPresentationMode/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1583247141964" />
     <state x="-1617" y="166" width="672" height="678" key="search.everywhere.popup/-2560.-163.2560.1440/0.0.1920.1200@-2560.-163.2560.1440" timestamp="1582982502409" />
   </component>
 </project>

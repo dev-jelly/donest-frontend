@@ -1,8 +1,18 @@
-import React, { PropsWithChildren } from 'react';
+import React, { PropsWithChildren, useState } from 'react';
 import styled from 'styled-components';
 import 'material-icons/iconfont/material-icons.scss';
 import oc from 'open-color';
-import Button from "../common/Button";
+import Button from '../common/Button';
+import { Item } from '../../types/Item';
+
+interface JobProps {
+  icon: string;
+  title: string;
+  item: Item;
+  setItem: Function;
+  setEditable: Function;
+}
+
 const JobBlock = styled.div`
   min-width: 6rem;
   text-align: center;
@@ -32,14 +42,19 @@ const JobBlockWrapper = styled.div`
   flex-direction: row;
 `;
 
-interface JobProps {
-  icon: string;
-  title: string;
-}
-
-const Job = ({ icon, title }: PropsWithChildren<JobProps>) => {
+const Job = ({
+  item,
+  setItem,
+  setEditable,
+  icon,
+  title,
+}: PropsWithChildren<JobProps>) => {
+  const onClick = () => {
+    setItem({ ...item, title, description: '' });
+    setEditable(title === '기타');
+  };
   return (
-    <JobBlock>
+    <JobBlock onClick={onClick}>
       <p>
         <span className={'material-icons'}>{icon}</span>
       </p>
@@ -55,8 +70,7 @@ const ItemWriteBlock = styled.div`
   margin: 1rem 0;
 `;
 
-
-const EtcTitle = styled.input`
+const JobTitle = styled.input`
   margin: 0.5rem 2rem;
   padding: 0.2rem;
   font-size: 1.2rem;
@@ -65,30 +79,116 @@ const EtcTitle = styled.input`
 const DescriptionBlock = styled.textarea`
   margin: 0.5rem 2rem;
   padding: 0.2rem;
-  font-size: 1.2rem;  
-  
+  font-size: 1.2rem;
+
   height: 6rem;
 `;
 
 const ItemWrite = () => {
+  const [item, setItem] = useState<Item>({
+    title: '',
+    description: '',
+    startDateTime: new Date(2019, 1, 27, 15),
+    endDateTime: new Date(2019, 1, 27, 17),
+  });
+
+  const [editable, setEditable] = useState<boolean>(false);
+
   return (
     <ItemWriteBlock>
       <JobBlockWrapper>
-        <Job title={'공부'} icon={'face'} />
-        <Job title={'공부'} icon={'face'} />
-        <Job title={'공부'} icon={'face'} />
-        <Job title={'공부'} icon={'face'} />
-        <Job title={'공부'} icon={'face'} />
-        <Job title={'공부'} icon={'face'} />
-        <Job title={'공부'} icon={'face'} />
-        <Job title={'공부'} icon={'face'} />
-        <Job title={'공부'} icon={'face'} />
-        <Job title={'공부'} icon={'face'} />
-        <Job title={'공부'} icon={'face'} />
-        <Job title={'기타'} icon={'book'} />
+        <Job
+          item={item}
+          setItem={setItem}
+          setEditable={setEditable}
+          title={'공부'}
+          icon={'face'}
+        />
+        <Job
+          item={item}
+          setItem={setItem}
+          setEditable={setEditable}
+          title={'공부'}
+          icon={'face'}
+        />
+        <Job
+          item={item}
+          setItem={setItem}
+          setEditable={setEditable}
+          title={'공부'}
+          icon={'face'}
+        />
+        <Job
+          item={item}
+          setItem={setItem}
+          setEditable={setEditable}
+          title={'공부'}
+          icon={'face'}
+        />
+        <Job
+          item={item}
+          setItem={setItem}
+          setEditable={setEditable}
+          title={'공부'}
+          icon={'face'}
+        />
+        <Job
+          item={item}
+          setItem={setItem}
+          setEditable={setEditable}
+          title={'공부'}
+          icon={'face'}
+        />
+        <Job
+          item={item}
+          setItem={setItem}
+          setEditable={setEditable}
+          title={'공부'}
+          icon={'face'}
+        />
+        <Job
+          item={item}
+          setItem={setItem}
+          setEditable={setEditable}
+          title={'공부'}
+          icon={'face'}
+        />
+        <Job
+          item={item}
+          setItem={setItem}
+          setEditable={setEditable}
+          title={'공부'}
+          icon={'face'}
+        />
+        <Job
+          item={item}
+          setItem={setItem}
+          setEditable={setEditable}
+          title={'공부'}
+          icon={'face'}
+        />
+        <Job
+          item={item}
+          setItem={setItem}
+          setEditable={setEditable}
+          title={'공부'}
+          icon={'face'}
+        />
+        <Job
+          item={item}
+          setItem={setItem}
+          setEditable={setEditable}
+          title={'기타'}
+          icon={'book'}
+        />
       </JobBlockWrapper>
-      <EtcTitle placeholder={"한 일을 적어주세요!"} disabled />
-      <DescriptionBlock placeholder={"한 일에 대한 간단한 설명을 적습니다."}/>
+      // TODO ONCHANGE 구현
+      <JobTitle
+        placeholder={'한 일을 적어주세요!'}
+        value={item.title}
+        disabled={!editable}
+      />
+      <DescriptionBlock placeholder={'한 일에 대한 간단한 설명을 적습니다.'} />
       <Button background={oc.cyan[3]}>Register</Button>
     </ItemWriteBlock>
   );
