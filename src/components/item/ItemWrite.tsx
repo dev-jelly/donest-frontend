@@ -7,10 +7,14 @@ const JobBlock = styled.div`
   min-width: 6rem;
   text-align: center;
   color: ${oc.gray[6]};
+  border-radius: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0);
   &:hover {
-    background: ${oc.orange[3]};
+    background: ${oc.orange[4]};
     box-shadow: 5px 5px blur ${oc.orange[6]} inset;
     color: black;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-top: 0;
   }
 
   &:focus {
