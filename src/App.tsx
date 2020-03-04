@@ -6,7 +6,7 @@ import ItemDetailPage from "./pages/ItemDetailPage";
 import ItemWritePage from "./pages/ItemWritePage";
 import {indexPath, itemDetailPath, itemListPath, newItemPath} from "./lib/paths";
 
-const DonestContext = createContext({});
+export const DonestContext = createContext({});
 
 function App() {
   return (
