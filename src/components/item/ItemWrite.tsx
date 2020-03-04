@@ -1,4 +1,7 @@
-import React, { PropsWithChildren, useState } from 'react';
+import React, {
+  PropsWithChildren,
+  useState,
+} from 'react';
 import styled from 'styled-components';
 import 'material-icons/iconfont/material-icons.scss';
 import oc from 'open-color';
@@ -84,6 +87,29 @@ const DescriptionBlock = styled.textarea`
   height: 6rem;
 `;
 
+interface Task {
+  title: string;
+  icon: string;
+}
+
+const tasks: Task[] = [
+  {
+    title: '공부',
+    icon: 'book',
+  },
+  { title: '운동', icon: 'face' },
+  { title: '쇼핑', icon: 'face' },
+  { title: '업무', icon: 'face' },
+  { title: '휴식', icon: 'face' },
+  { title: '낮잠', icon: 'face' },
+  { title: '게임', icon: 'games' },
+  { title: '산책', icon: 'face' },
+  { title: '운전', icon: 'face' },
+  { title: '청소', icon: 'face' },
+  { title: '식사', icon: 'face' },
+  { title: '기타', icon: 'face' },
+];
+
 const ItemWrite = () => {
   const [item, setItem] = useState<Item>({
     title: '',
@@ -94,99 +120,28 @@ const ItemWrite = () => {
 
   const [editable, setEditable] = useState<boolean>(false);
 
+  const onChangeJobTitle = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setItem({ ...item, title: e.target.value });
+  };
+
   return (
     <ItemWriteBlock>
       <JobBlockWrapper>
-        <Job
-          item={item}
-          setItem={setItem}
-          setEditable={setEditable}
-          title={'공부'}
-          icon={'face'}
-        />
-        <Job
-          item={item}
-          setItem={setItem}
-          setEditable={setEditable}
-          title={'공부'}
-          icon={'face'}
-        />
-        <Job
-          item={item}
-          setItem={setItem}
-          setEditable={setEditable}
-          title={'공부'}
-          icon={'face'}
-        />
-        <Job
-          item={item}
-          setItem={setItem}
-          setEditable={setEditable}
-          title={'공부'}
-          icon={'face'}
-        />
-        <Job
-          item={item}
-          setItem={setItem}
-          setEditable={setEditable}
-          title={'공부'}
-          icon={'face'}
-        />
-        <Job
-          item={item}
-          setItem={setItem}
-          setEditable={setEditable}
-          title={'공부'}
-          icon={'face'}
-        />
-        <Job
-          item={item}
-          setItem={setItem}
-          setEditable={setEditable}
-          title={'공부'}
-          icon={'face'}
-        />
-        <Job
-          item={item}
-          setItem={setItem}
-          setEditable={setEditable}
-          title={'공부'}
-          icon={'face'}
-        />
-        <Job
-          item={item}
-          setItem={setItem}
-          setEditable={setEditable}
-          title={'공부'}
-          icon={'face'}
-        />
-        <Job
-          item={item}
-          setItem={setItem}
-          setEditable={setEditable}
-          title={'공부'}
-          icon={'face'}
-        />
-        <Job
-          item={item}
-          setItem={setItem}
-          setEditable={setEditable}
-          title={'공부'}
-          icon={'face'}
-        />
-        <Job
-          item={item}
-          setItem={setItem}
-          setEditable={setEditable}
-          title={'기타'}
-          icon={'book'}
-        />
+        {tasks.map(task => (
+          <Job
+            item={item}
+            title={task.title}
+            icon={task.icon}
+            setItem={setItem}
+            setEditable={setEditable}
+          />
+        ))}
       </JobBlockWrapper>
-      // TODO ONCHANGE 구현
       <JobTitle
         placeholder={'한 일을 적어주세요!'}
         value={item.title}
         disabled={!editable}
+        onChange={onChangeJobTitle}
       />
       <DescriptionBlock placeholder={'한 일에 대한 간단한 설명을 적습니다.'} />
       <Button background={oc.cyan[3]}>Register</Button>
